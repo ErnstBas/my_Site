@@ -5,17 +5,38 @@
   crossorigin="anonymous"
 /> -->
 <!DOCTYPE html>
-<html land = "en">
+<html lang = "en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   {% load static %}
+  {% load blog_extras %}
   <link rel="stylesheet" href="{% static 'projects/style.css' %}" />
+  <script src="{% static 'projects/my_script.js' %}" defer></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
+<body>
+<header>
+  <h1>Bas Ernst</h1>
+  <ul class="menu">
+    <li><a class="menuItem" href="#"">Home</a></li>
+    <li><a class="menuItem" href="/projects/">Projects</a></li>
+    <li><a class="menuItem" href="#">Blog</a></li>
+    <li><a class="menuItem" href="#">About</a></li>
+  </ul>
+  <button class="hamburger">
+    <!-- material icons https://material.io/resources/icons/ -->
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons">close</i>
+  </button>
+</header>
 
 {% block page_content %}{% endblock %}
+
+</body>
+</html>
 
 <!-- <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
