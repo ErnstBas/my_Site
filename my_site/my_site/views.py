@@ -8,3 +8,6 @@ class AboutPageView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['MEDIA_URL'] = settings.MEDIA_URL
         return context
+
+class HomePageView(TemplateView):
+    template_name = "home.html"
