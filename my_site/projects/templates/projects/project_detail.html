@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html land="en">
   <head>
-    {% extends "projects/base.html" %}
-    {% load blog_extras %}
+    {% extends "projects/base.html" %} {% load blog_extras %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -10,19 +9,18 @@
   </head>
 
   {% block page_content %}
-  <h1>{{ project.title }}</h1>
   <div class="row">
-    <div class="col-md-8">
+    <div class="image">
       <img
         src="{{ project.image.url }}"
-        alt=" this is an image of the project "
+        alt="This is an image of the project {{ project.title }} "
       />
     </div>
-    <div class="col-md-4">
-      <h5>About the project:</h5>
+    <div class="description">
+      <h2>{{ project.title }}</h2>
       <p>{{ project.description | markdown | safe }}</p>
       <br />
-      <h5>Technology used:</h5>
+      <h3>Technology</h3>
       <p>{{ project.technology }}</p>
     </div>
   </div>

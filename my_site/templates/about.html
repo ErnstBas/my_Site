@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html land="en">
+  <head>
+    {% extends "projects/base.html" %} {% load static %} {% load blog_extras %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About</title>
+  </head>
+  {% block page_content %}
+  <div class="about_container">
+    <div class="about_item">
+      <img
+        src="{{ MEDIA_URL }}images/50556177.jpg"
+        alt="This is an image of Bas Ernst"
+      />
+    </div>
+    <div class="about_description">
+      <p>
+        👋 Hi, I’m Bas Ernst<br />
+        👀 I’m interested in web development and data analysis <br />
+        🌱 I’m currently learning part-time towards a BSC in Computing and IT at
+        the Open University (UK) <br />
+        💞️ I’m looking to collaborate on socially relevant projects related to
+        democracy, diplomacy and culture <br />
+        📫 You can reach me on:
+        <a href="http://www.linkedin.com/in/basernst/">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+
+  {% endblock %}
+</html>
