@@ -22,7 +22,7 @@ from .views import AboutPageView, HomePageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path("", HomePageView.as_view(), name="home"),
+    path("", HomePageView.as_view(), name="home"),
     path("about/", AboutPageView.as_view(), name="about"),
     path("projects/", include("projects.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

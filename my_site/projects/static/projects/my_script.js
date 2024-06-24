@@ -1,3 +1,5 @@
+// Source: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+
 document.addEventListener("DOMContentLoaded", function () {
   const menu = document.querySelector(".menu");
   const menuItems = document.querySelectorAll(".menuItem");

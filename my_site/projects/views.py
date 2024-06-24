@@ -1,6 +1,7 @@
+import requests
 from django.shortcuts import render
 from projects.models import Project
- 
+
 def project_index(request):
     projects = Project.objects.all()
     context = {
@@ -15,6 +16,4 @@ def project_detail(request, project_slug):
         'project': project
     }
     return render(request, 'projects/project_detail.html', context)
-
-
 

@@ -138,3 +138,8 @@ a:visited {
     grid-template-columns: auto !important;
   }
 }
+
+img .responsive {
+  width: 100%;  
+  height: auto;
+}
