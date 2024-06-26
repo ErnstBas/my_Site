@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% load static %} {% load blog_extras %}
     <link rel="stylesheet" href="{% static 'projects/style.css' %}" />
+    {% comment %}
+    <script src="{% static 'projects/my_script.js' %}" defer></script>
+    {% endcomment %}
     <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lora+Italic|Nanum+Gothic"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans|Cardo"
     />
   </head>
 
@@ -22,7 +25,7 @@
       <ul class="menu">
         <li><a class="menuItem" href="/">Home</a></li>
         <li><a class="menuItem" href="/projects/">Projects</a></li>
-        <li><a class="menuItem" href="#">Blog</a></li>
+        <li><a class="menuItem" href="/blog">Blog</a></li>
         <li><a class="menuItem" href="/about">About</a></li>
       </ul>
     </header>

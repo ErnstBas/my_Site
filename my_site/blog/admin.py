@@ -1,10 +1,14 @@
 from django.contrib import admin
-from .models import Project
-from blog.models import Blog
+
+# Register your models here.
+from .models import Blog
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', 'technology', id)
+    list_display = ('title', id)
     list_filter = ('title',)
     prepopulated_fields = {'slug': ('title',)}
 
-admin.site.register(Project, ProjectAdmin)
+admin.site.register(Blog, ProjectAdmin)
+
+
+

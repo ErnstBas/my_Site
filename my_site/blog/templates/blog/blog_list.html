@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html land="en">
+  <head>
+    {% extends "projects/base.html" %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>blog index</title>
+  </head>
+
+  <body>
+    {% block page_content %}
+
+    <div class="grid-container">
+      {% for blog in blog %}
+      <div class="grid-item">
+        <img src="{{ blog.image.url }}" />
+        <div class="overlay">
+          <a href="{% url 'blog_post' blog.slug %}">
+            <h5>{{ blog.title }}</h5>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html land="en">
+  <head>
+    {% extends "projects/base.html" %} {% load blog_extras %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>blog post</title>
+  </head>
+
+  {% block page_content %}
+  <div class="row">
+    <div class="image">
+      <img
+        src="{{ blog.image.url }}"
+        alt="This is an image of the blog post {{ blog.title }} "
+      />
+    </div>
+    <div class="description">
+      <h2>{{ blog.title }}</h2>
+      <p>{{ blog.description | markdown | safe }}</p>
+      <br />
+    </div>
+  </div>
+  {% endblock %}
+</html>

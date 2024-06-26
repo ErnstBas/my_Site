@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'projects',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
              BASE_DIR / "templates",     
-            "projects/templates"
+            "projects/templates",
+            "blog/templates",
             ],
         'APP_DIRS': True,
         'OPTIONS': {
