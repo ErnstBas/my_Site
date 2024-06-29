@@ -14,15 +14,17 @@
     <div class="grid-container">
       {% for blog in blog %}
       <div class="grid-item">
-        <img class="image1" src="{{ blog.image.url }}" />
-        <div class="overlay">
-          <a href="{% url 'blog_post' blog.slug %}">
-            <h5>{{ blog.title }}</h5>
-          </a>
+        <div class="image-container">
+          <img class="blog_image" src="{{ blog.image.url }}" />
+          <div class="overlay">
+            <a href="{% url 'blog_post' blog.slug %}">
+              <h5>{{ blog.title }}</h5>
+            </a>
+          </div>
         </div>
-        <p class="summary">
-          {{ blog.summary |truncatewords:50}}
-        </p>
+        <div class="blog_summary">
+          <p>{{ blog.summary }}</p>
+        </div>
       </div>
       {% endfor %}
     </div>

@@ -11,9 +11,9 @@
   <body>
     {% block page_content %}
 
-    <div class="grid-container">
+    <div class="project_container">
       {% for project in projects %}
-      <div class="grid-item">
+      <div class="project_item">
         <img src="{{ project.image.url }}" />
         <div class="overlay">
           <a href="{% url 'project_detail' project.slug %}">
