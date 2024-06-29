@@ -49,10 +49,13 @@ li {
   }
 }
 
-/* 2 columns for desktop */
+//* 2 columns for desktop */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "image1 image1"
+    "summary summary";
   padding: 10px;
   gap: 48px;
 }
@@ -63,8 +66,7 @@ li {
     grid-template-columns: auto !important;
   }
 }
-
-.grid-item {
+git status .grid-container .grid-item {
   position: relative;
 }
 
@@ -72,6 +74,11 @@ li {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  grid-area: image1;
+}
+
+.summary {
+  grid-area: summary;
 }
 
 .grid-item:hover {
@@ -140,6 +147,29 @@ a:visited {
 }
 
 img .responsive {
-  width: 100%;  
+  width: 100%;
   height: auto;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:hover {
+  color: #8fbcbb;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #5e81ac;
 }
