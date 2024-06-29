@@ -4,7 +4,7 @@ from django.contrib import admin
 from .models import Blog
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', id)
+    list_display = ('title', 'id', 'date')
     list_filter = ('title',)
     prepopulated_fields = {'slug': ('title',)}
 
