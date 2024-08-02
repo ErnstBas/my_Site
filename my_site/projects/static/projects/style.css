@@ -4,7 +4,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Josefin Sans";
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p,
+.description {
+  font-size: 14px;
 }
 
 * {
@@ -119,7 +124,7 @@ li {
   visibility: visible;
 }
 
-.image-container .overlay a {
+.image-container h5 {
   color: white;
   text-decoration: none;
   /* font-family: Arial, Helvetica, sans-serif; */
@@ -177,7 +182,7 @@ li {
   visibility: visible;
 }
 
-.project_item .overlay a {
+.project_item .overlay h6 {
   color: white;
   text-decoration: none;
   /* font-family: Arial, Helvetica, sans-serif; */
@@ -213,5 +218,6 @@ li {
 
 img .responsive {
   width: 100%;
+  max-width:400px;
   height: auto;
 }

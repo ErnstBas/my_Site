@@ -12,7 +12,7 @@
     {% block page_content %}
 
     <div class="project_container">
-      {% for project in projects %}
+      {% for project in projects %} {% comment %}
       <div class="project_item">
         <img src="{{ project.image.url }}" />
         <div class="overlay">
@@ -21,6 +21,16 @@
           </a>
         </div>
       </div>
+      {% endcomment %}
+      <div class="project_item">
+        <a href="{% url 'project_detail' project.slug %}">
+          <img src="{{ project.image.url }}" />
+          <div class="overlay">
+            <h6>{{ project.title }}</h6>
+          </div>
+        </a>
+      </div>
+
       {% endfor %}
     </div>
 
