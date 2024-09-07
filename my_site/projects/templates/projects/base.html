@@ -13,24 +13,25 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans|Cardo"
-    />
-    <link rel="icon" href="data:,">
+    <link rel="icon" href="data:," />
   </head>
 
-  <body>
-    <header>
-      <h1>Bas Ernst</h1>
-      <ul class="menu">
-        <li><a class="menuItem" href="/">Home</a></li>
-        <li><a class="menuItem" href="/projects/">Projects</a></li>
-        <li><a class="menuItem" href="/blog">Blog</a></li>
-        <li><a class="menuItem" href="/about">About</a></li>
-      </ul>
-    </header>
+  <header>
+    <h1>Bas Ernst</h1>
+  </header>
 
-    {% block page_content %}{% endblock %}
+  <body>
+    <div class="layout">
+      <aside>
+
+        <ul class="menu">
+          <li><a class="menuItem" href="/">Home</a></li>
+          <li><a class="menuItem" href="/projects/">Projects</a></li>
+          <li><a class="menuItem" href="/blog">Blog</a></li>
+          <li><a class="menuItem" href="/about">About</a></li>
+        </ul>
+      </aside>
+      <main class="content">{% block page_content %}{% endblock %}</main>
+    </div>
   </body>
 </html>

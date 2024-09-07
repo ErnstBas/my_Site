@@ -10,21 +10,29 @@
   </head>
   {% block page_content %}
 
-  <div>
-  <h1>Bas Ernst</h1>
-  <ul class="home_menu">
-    <li><a class="menuItem" href="/projects/">Projects</a></li>
-    <li><a class="menuItem" href="/blog">Blog</a></li>
-    <li><a class="menuItem" href="/about">About</a></li>
-  </ul>
-
-  <img
-    class="home_img"
-    src="{{ image_url }}"
-    width="100%"
-    alt="A random image taken from a collection that focuses on fabrics depicted on paintings present at the Rijksmuseum Amsterdam"
-  />
-</div>
+  <body>
+    <div class="home_container">
+      <header>
+        <h1>Bas Ernst</h1>
+      </header>
+      <div class="layout">
+        <aside>
+          <ul class="menu">
+            <li><a class="menuItem" href="/projects/">Projects</a></li>
+            <li><a class="menuItem" href="/blog">Blog</a></li>
+            <li><a class="menuItem" href="/about">About</a></li>
+          </ul>
+        </aside>
+        <main class="content">
+          <img
+            class="home_img"
+            src="{{ image_url }}"
+            alt="A random image taken from a collection that focuses on fabrics depicted on paintings present at the Rijksmuseum Amsterdam"
+          />
+        </main>
+      </div>
+    </div>
+  </body>
 
   {% endblock %}
 </html>
