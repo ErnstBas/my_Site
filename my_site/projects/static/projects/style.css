@@ -210,15 +210,23 @@ li {
     flex-direction: column;
   }
 
+  header {
+    padding: 20px;
+  }
+
   aside {
-    width: 100%;
-    position: static; /* Stacked with content */
-    margin: 0;
+    margin-top: 120px;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
   }
 
   .content {
+    margin-top: 250px;
     margin-left: 0;
     padding: 10px;
+    position: fixed;
   }
 
   /* Responsive Images */
@@ -226,4 +234,9 @@ li {
     max-width: 100%;
     height: auto;
   }
+
+  .about_container {
+    grid-template-columns: 1fr;
+    }
+
 }
