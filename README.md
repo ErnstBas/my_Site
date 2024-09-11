@@ -6,3 +6,5 @@ The purpose of this project is:
 - setting up a minimalistic portfolio site
 - make it responsive for mobile use
 - eventually add more functionality, like search options, improve the database, etc. 
+
+![image](https://github.com/user-attachments/assets/65030350-c3a9-4dc6-8d6c-512f9506314d)
