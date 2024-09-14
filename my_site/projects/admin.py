@@ -3,7 +3,7 @@ from .models import Project
 from blog.models import Blog
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', 'technology', id)
+    list_display = ('title', 'technology', 'id', 'date')
     list_filter = ('title',)
     prepopulated_fields = {'slug': ('title',)}
 
