@@ -6,9 +6,10 @@ class Blog(models.Model):
     summary = models.TextField()
     description = models.TextField()
     image = models.FileField(upload_to="images")
-    date = models.DateField(auto_now_add=True)
+    date = models.DateField(auto_now_add=True, null=True, blank=True)
 
     def __str__(self):
         return f'{self.title}'
 
-          
+    class Meta:
+        ordering = ['-date']
