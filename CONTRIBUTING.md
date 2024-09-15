@@ -29,7 +29,5 @@ To send a pull request to the official repo:
 - Set your repo as the "head fork", and select the branch that you want to merge.
 - Create the pull request, complete with descriptions of changes. If applicable, connect the PR with the issue it addresses.
 
-[GitHub Documentation on creating a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
-
-)
+[GitHub Documentation on creating a pull request from a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
